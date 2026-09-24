@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Five Nights at Freddy's: The Complete Collection</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stage" id="stage" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <main class="picker">
+    <nav class="menu" id="menu" aria-label="Choose a game"></nav>
+
+    <div class="bottom">
+      <p class="prompt" id="prompt">SELECT AN ARCHIVE</p>
+      <div class="rule"></div>
+      <img class="footer-img" id="footerImg" src="assets/footer.png" draggable="false" alt="Five Nights at Freddy's: The Complete Collection">
+    </div>
+  </main>
+
+  <div class="fade-out" id="fadeOut"></div>
+  <script src="script.js"></script>
+</body>
+</html>
