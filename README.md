@@ -1,5 +1,5 @@
 ## Five Night's At Freddy's: The Complete Collection
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b4acea1b-e7a2-4f10-aad1-e5e8251eb439/deploy-status)](https://app.netlify.com/projects/fnafapp/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4acea1b-e7a2-4f10-aad1-e5e8251eb439/deploy-status)](https://fnafapp.netlify.app)
 [![Views](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fcodelinkd203%2FFNAF%2F&label=Views&icon=github&color=%23198754&message=&style=flat&tz=UTC)](https://github.com/codelinkd203/FNAF)
 [![Stars](https://img.shields.io/github/stars/codelinkd203/FNAF?style=flat-square)](https://github.com/codelinkd203/FNAF/stargazers)
 [![Forks](https://img.shields.io/github/forks/codelinkd203/FNAF?style=flat-square)](https://github.com/codelinkd203/FNAF/network/members)
