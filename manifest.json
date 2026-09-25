@@ -1,7 +1,7 @@
 {
-  "name": "Five Nights at Freddy's: The Complete Collection",
-  "short_name": "FNAF Collection",
-  "description": "Pick a game from the Five Nights at Freddy's complete collection.",
+  "name": "FNAF Collection",
+  "short_name": "FNAF",
+  "description": "Pick and play any game from the Five Nights at Freddy's complete collection!",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

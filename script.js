@@ -150,16 +150,16 @@
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
     deferredPrompt = e;
-    installBtn.hidden = false;
+    footer.classList.add("is-installable");
   });
 
-  installBtn.addEventListener("click", async () => {
+  footer.addEventListener("click", async () => {
     if (!deferredPrompt) return;
-    installBtn.hidden = true;
+    footer.classList.remove("is-installable");
     deferredPrompt.prompt();
     await deferredPrompt.userChoice;
     deferredPrompt = null;
   });
 
-  window.addEventListener("appinstalled", () => { installBtn.hidden = true; });
+  window.addEventListener("appinstalled", () => { footer.classList.remove("is-installable"); });
 })();

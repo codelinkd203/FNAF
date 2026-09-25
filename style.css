@@ -195,6 +195,8 @@ a, a img { -webkit-user-drag: none; }
   outline: none;
 }
 
+.footer-img.is-installable { cursor: pointer; }
+
 /* ---------- leave transition ---------- */
 .fade-out {
   position: fixed; inset: 0; z-index: 10;
