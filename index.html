@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Five Nights at Freddy's: The Complete Collection</title>
-  <link rel="icon" href="assets/favicon.ico">
+  <meta name="description" content="Pick a game from the Five Nights at Freddy's complete collection.">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/icons/icon-512.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +26,8 @@
     <div class="bottom">
       <p class="prompt" id="prompt">SELECT AN ARCHIVE</p>
       <div class="rule"></div>
-      <img class="footer-img" id="footerImg" src="assets/footer.png" draggable="false" alt="Five Nights at Freddy's: The Complete Collection">
+      <img class="footer-img" id="footerImg" src="assets/footer.png" alt="Five Nights at Freddy's: The Complete Collection">
+      <button class="install-btn" id="installBtn" type="button" hidden>Install App</button>
     </div>
   </main>
 

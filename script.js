@@ -1,4 +1,8 @@
 (() => {
+  // No right-click menu, no dragging anything.
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+  document.addEventListener("dragstart", (e) => e.preventDefault());
+
   // Folders are relative to the page this index.html lives in.
   // If you put the picker somewhere other than the site root, change BASE (e.g. "../").
   const BASE = "";
@@ -29,6 +33,7 @@
     img.className = cls;
     img.alt = "";
     img.decoding = "async";
+    img.draggable = false;
     img.addEventListener("error", () => { img.remove(); if (onFail) onFail(); });
     img.dataset.src = src;
     return img;
@@ -130,4 +135,31 @@
       prompt.textContent = "SELECT AN ARCHIVE";
     }
   });
+
+  // PWA: register the service worker, and back up the browser's own
+  // install icon (URL bar) with an on-page button.
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register(`${BASE}sw.js`).catch(() => {});
+    });
+  }
+
+  const installBtn = document.getElementById("installBtn");
+  let deferredPrompt = null;
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.hidden = false;
+  });
+
+  installBtn.addEventListener("click", async () => {
+    if (!deferredPrompt) return;
+    installBtn.hidden = true;
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  });
+
+  window.addEventListener("appinstalled", () => { installBtn.hidden = true; });
 })();
