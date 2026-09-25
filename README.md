@@ -1,4 +1,10 @@
 ## Five Night's At Freddy's: The Complete Collection
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4acea1b-e7a2-4f10-aad1-e5e8251eb439/deploy-status)](https://app.netlify.com/projects/fnafapp/deploys)
+[![Stars](https://img.shields.io/github/stars/codelinkd203/FNAF?style=flat-square)](https://github.com/codelinkd203/FNAF/stargazers)
+[![Views](https://hitscounter.dev/user/codelinkd203/repo/FNAF/badge?style=flat-square)](https://github.com/codelinkd203/FNAF)
+[![Forks](https://img.shields.io/github/forks/codelinkd203/FNAF?style=flat-square)](https://github.com/codelinkd203/FNAF/network/members)
+
+
 Experience FNAF like never before— with a wonderful picker, progress saves, and no need to download anything. Click one of the below to play a game, or [visit the site](https://codelinkd203.github.io/FNAF/) directly.
 
  - [FNAF 1](https://codelinkd203.github.io/FNAF/fnaf-1/)
